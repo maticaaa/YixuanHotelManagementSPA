@@ -1,0 +1,19 @@
+<p>roomtype-available works!</p>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="table-light">Room Type Id</th>
+                <th class="table-light">Room Type Name</th>
+                <th class="table-light">Rent</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let roomType of availableRoomTypes">
+            <tr class="table">
+                <td class="table-light">{{roomType.id}}</td>
+                <td class="table-light">{{roomType.rtDesc}}</td>
+                <td class="table-light">{{roomType.rent}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

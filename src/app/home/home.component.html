@@ -1,0 +1,16 @@
+<ul class="list-group" *ngFor="let customer of customers">
+    <app-customer-card [customerCard]='customer'>
+    </app-customer-card>
+</ul>
+<a class="badge badge-primary"[routerLink]="['/customers']">
+    Customer
+</a>
+<a class="badge badge-primary"[routerLink]="['/rooms']">
+    Room
+</a>
+<a class="badge badge-primary"[routerLink]="['/roomTypes']">
+    Room Type
+</a>
+<a class="badge badge-primary"[routerLink]="['/services']">
+    Service
+</a>

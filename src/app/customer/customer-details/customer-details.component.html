@@ -1,0 +1,49 @@
+<div class="table-responsive">
+    <table class="table">
+        <tr class="table">
+            <td class="table-light">Customer Id</td>
+            <td class="table-light">{{customer.id}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Name</td>
+            <td class="table-light">{{customer.cName}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Address</td>
+            <td class="table-light">{{customer.address}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Phone</td>
+            <td class="table-light">{{customer.phone}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Email</td>
+            <td class="table-light">{{customer.email}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">CheckIn</td>
+            <td class="table-light">{{customer.checkIn}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Total Persons</td>
+            <td class="table-light">{{customer.totalPersons}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Booking Days</td>
+            <td class="table-light">{{customer.bookingDays}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Advance</td>
+            <td class="table-light">{{customer.advance}}</td>
+        </tr>
+        <tr class="table">
+            <td class="table-light">Room No</td>
+            <td class="table-light">
+                {{customer.roomNo}} 
+                <a class="badge badge-primary" [routerLink]="[ '/rooms/', customer.roomNo ]">
+                Room Details
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>

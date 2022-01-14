@@ -1,0 +1,20 @@
+<p>room-list works!</p>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr [(ngModel)]="name">
+                <th class="table-light">Room Id</th>
+                <th class="table-light">Name</th>
+                <th class="table-light">Status</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let room of rooms">
+            <tr class="table">
+                <td class="table-light">{{room.id}}</td>
+                <td class="table-light">{{room.rtCode}}</td>
+                <td class="table-light">{{room.status? "Available": "Occupied"}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

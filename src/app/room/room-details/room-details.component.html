@@ -1,0 +1,44 @@
+<p>room-details works!</p>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="table-light">Room Id</th>
+                <th class="table-light">Name</th>
+                <th class="table-light">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table">
+                <td class="table-light">{{room.id}}</td>
+                <td class="table-light">{{room.rtCode}}</td>
+                <td class="table-light">{{room.status? "Available": "Occupied"}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="table-light">Service Id</th>
+                <th class="table-light">roomNo</th>
+                <th class="table-light">sDesc</th>
+                <th class="table-light">amount</th>
+                <th class="table-light">serviceDate</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let service of room.services">
+            <tr class="table">
+                <td class="table-light">{{service.id}}</td>
+                <td class="table-light">{{service.roomNo}}</td>
+                <td class="table-light">{{service.sDesc}}</td>
+                <td class="table-light">{{service.amount}}</td>
+                <td class="table-light">{{service.serviceDate}}</td>
+                <!-- id:     number;
+                roomNo:      number;
+                sDesc:       string;
+                amount:      number;
+                serviceDate: string; -->
+            </tr>
+        </tbody>
+    </table>
+</div>
